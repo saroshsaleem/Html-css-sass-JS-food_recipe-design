@@ -1,0 +1,341 @@
+@import "font-family.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    overflow: auto;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    .header{
+        .navbar{
+            width: 100%;;
+            position: fixed;
+            backdrop-filter: blur(40px);
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px 40px;
+            font-weight: bold;
+            font-size: 20px;
+            ul{
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .left{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 20px;
+                .para{
+                    margin-right: 70px;
+                    font-weight: bolder;
+                }
+
+                .n1{
+                    padding-top: 10px;
+                    display: flex;
+                    font-size: 10px;
+                    .sc{
+                        .scNav{
+                            display: none;
+                        }
+                        &:hover{
+                            .scNav{
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                padding: 10px 30px;
+                                justify-content: space-between;
+                                img{
+                                    height: 70px;
+                                }
+                                background-color: white;
+                                .sc1{
+                                    margin: 20px 10px; 
+                                    color: #302f2f;
+                                    .head{
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                    }
+                                    hr{
+                                        margin-bottom: 10px;
+                                    }
+                                        li{
+                                            &:hover{
+                                                opacity: 0.6;
+                                            }
+                                        }   
+                                }
+                                                            
+                            }
+                        }
+                    }
+                    li{
+                        padding-left: 20px;
+                        }
+                    
+                }
+                .pop{
+                    display: none;
+                }
+                .popUp{
+                    backdrop-filter: blur(40px);
+                    opacity: 1.0;
+                    display: block;
+                    position: absolute;
+                    background: transparent;
+                    background-color: white;
+                    padding: 10px 30px;
+                    border: 3px solid whitesmoke;
+                    box-shadow: lighten($color: #000000, $amount: 0);
+                    .head{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 10px 10px;
+                        p{
+                            margin-right: 20px;
+                        }
+                        .close{
+                            margin-left: 50px;
+                            border: 1px solid black;
+                            border-radius: 50%;
+                            color: #adadad;
+                            background-color: transparent;
+                            padding: 5px 5px;
+                        }
+                    }
+                    .gridImage{
+                        display: grid;
+                        grid-template-rows: repeat(4,1fr);
+                        grid-gap: 50px;
+                        .image{
+                            display: flex;
+                            justify-content: space between;
+                            img{
+                                width:20%
+                                3px solid black;
+                            }
+                            .p{
+                                margin-left: 60px;
+                                font-size: 10px;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                    .cost{
+                        display: flex;
+                        justify-content: space-between;
+                        .checkOut{
+                            background-color: yellow;
+                            border: 1px solid black;
+                            border-radius: 15px;
+                            padding: 5px 5px;
+                        }
+                    }
+                }
+            }
+            .n2{
+                padding-right: 70px;
+                padding-top: 10px;
+                display: flex;
+                font-size: 10px;
+                li{
+                    padding-left: 15px;
+                    .b1{
+                        display: inline;
+                        border: none;
+                        color: white;
+                        background-color: black;
+                        border-radius: 50%;
+                        padding: 2px 4px;
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                    .b2{
+                        display: inline;
+                        border: none;
+                        color: white;
+                        background-color: black;
+                        border-radius: 15px;
+                        padding: 5px 10px;
+                        font-size: 10px;
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainpic{
+        display: flex;
+        background-color:#fbe1dd;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px 20px;
+        .pic{
+            padding-right: 20px;
+        }
+        .detail{
+            padding-left: 50px;
+            font-weight: bold;
+            font-size: 50px;
+            p{
+                word-spacing: 1.5;
+                font-weight: normal;
+                font-size: 15px;
+            }
+            .link{
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+    .strip{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+        .left{
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+        .center{
+            border-radius: 5px solid;
+            opacity: 0.6;
+            input{
+                border: none;
+                border-radius: 5px;
+                text-align: left;
+                padding: 10px 20px;
+               
+            }
+        }
+        .right{
+            margin-right: 40px;
+            .sort{
+                border: none;
+                color: white;
+                border-radius: 15px;
+                text-align: left;
+                font-size: 10px;
+                background-color: black;
+                padding: 8px 15px;
+                .option{
+                    display: block;
+                    color: white;
+                    font-size: 10px;
+                   
+                }
+            }
+            
+        }
+    }
+    .mt{
+        display: flex;
+        margin-bottom: 100px;
+        .lf{
+            font-size: 12px;
+            padding-left: 60px;
+            .leftHeading{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                .div1{
+                    font-weight: bold;
+                }
+                .div2{
+                    padding-left: 200px;
+                    color: #ed2939;
+                }
+            }
+            .div{
+                display: flex;
+                justify-content: space-between;
+                padding-right: 10px;
+                font-size: 10px;
+                padding-bottom: 5px;
+                input{
+                    background-color: black;
+                    opacity: 0.6;
+                }
+            }
+            .seperate{
+                margin-top: 15px;
+                .div{
+                    font-weight: bold;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 10px;
+                    font-size: 10px;
+                    padding-bottom: 10px;
+                    }
+                }   
+            }
+        }
+        .dp{
+            display: grid; 
+           grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            margin: 10px 40px;
+           
+
+            .p{ font-size: 10px;
+                font-weight: bold;
+                padding: 10px 10px;
+                border: 3px solid white;
+                border-radius: 15px;
+                &:hover{
+                    box-shadow: 10px 10px 10px 10px rgb(221, 216, 216);
+                }
+                img{
+                    border-radius: 15px;
+                    height:160px;
+                    width: 100%;
+                    background-size: 100% 100%;
+                 }
+                .para2{
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+                  font-size: 10px;
+                  font-weight: normal;
+                  justify-content: space-between;
+                } 
+                .orderBtn{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    button{
+                        margin-left: 10px;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 80px;
+                        border: none;
+                        border-radius: 10px;
+                        background-color: #000000;
+                        color: white;
+                    }
+                }
+            }
+        }
+}
